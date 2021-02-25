@@ -1,6 +1,5 @@
 
-## To show the differene between 
-## cv2.imshow- BGR format v/s plt.imshow- RGB format
+## Mouse callback
 
 import numpy as np 
 import cv2
