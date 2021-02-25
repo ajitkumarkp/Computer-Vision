@@ -1,5 +1,3 @@
-## Basics of numpy 
-
 import numpy as np
 from PIL import Image
 import cv2 as cv
