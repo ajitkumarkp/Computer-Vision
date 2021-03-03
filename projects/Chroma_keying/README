@@ -11,5 +11,5 @@
 # The output is another video where the green background is replaced with the orange sky background. 
 # There is also a simple UI using HighGUI to control/select the following:
 # 1. Color Patch Selector : Click on the green area to select the color
-# 2. Tolerance slider 
-# 3. Blurring slider 
+# 2. Tolerance slider : This slider controls how different the color can be from the mean of colors sampled in the previous step to be included in the green background.
+# 3. Blurring/Softness slider : This slider will control the softness of the foreground mask at the edges.
