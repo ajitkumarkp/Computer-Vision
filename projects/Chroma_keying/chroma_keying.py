@@ -1,20 +1,3 @@
-## Chroma Keying ##
-# This project implements an algorithm for green screen matting or chroma keying from scratch. 
-
-## Description ##
-## Input
-# The input to the algorithm will be a video with a subject in front of a green screen. 
-# 1. the asteroid spinning with a green screen background 
-# 2. Orange sky image
-
-## Output
-# The output is another video where the green background is replaced with the orange sky background. 
-# There is also a simple UI using HighGUI to control/select the following:
-# 1. Color Patch Selector : Click on the green area to select the color
-# 2. Tolerance slider 
-# 3. Blurring slider 
-
-
 import cv2
 import math
 import numpy as np
