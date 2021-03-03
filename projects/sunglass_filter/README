@@ -1,0 +1,11 @@
+This app uses techniques like bitwise operations to implement an automatic Sunglasses Filter. Following are the high level steps:
+
+1. Detect the face using OpenCV DNN modules
+
+2. Extract the eye region.
+
+3. Warp the sunglasses onto the eye region.
+
+4. Use alpha matting to give transparency effect.
+
+Further comments in-line with code. 
