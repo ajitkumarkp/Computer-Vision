@@ -1,0 +1,11 @@
+This app scans a doc and automatically alligns it (no need to select the 4 corners of the doc).
+
+Follwoing are the steps at a high level.
+
+1. Preprocessing and Contour Detection
+
+2. Contour Approximation
+
+3. Perspective Transformation
+
+Code has detailed comments in-line.
