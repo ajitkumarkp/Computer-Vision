@@ -1,2 +1,51 @@
 Projects as part of OpenCV-CV1 coursework- https://opencv.org/courses/.
-Documentation can be found in the repos and notebook files.
+Description:
+--------------------------------------------------------------------------------------------
+1. Chroma Keying 
+This project implements an algorithm for green screen matting or chroma keying from scratch. 
+The input to the algorithm will be a video with a subject in front of a green screen. 
+1. the asteroid spinning with a green screen background 
+2. Orange sky image
+The output is another video where the green background is replaced with the orange sky background. 
+There is also a simple UI using HighGUI to control/select the following:
+1. Color Patch Selector : Click on the green area to select the color
+2. Tolerance slider : This slider controls how different the color can be from the mean of colors sampled in the previous step to be included in the green background.
+3. Blurring/Softness slider : This slider will control the softness of the foreground mask at the edges.
+--------------------------------------------------------------------------------------------
+2. Doc_scanner_app
+This app scans a doc and automatically alligns it (no need to select the 4 corners of the doc).
+Following are the steps at a high level.
+1. Preprocessing and Contour Detection
+2. Contour Approximation
+3. Perspective Transformation
+Code has detailed comments in-line.
+--------------------------------------------------------------------------------------------
+3. Sunglasses Filter
+This app uses techniques like bitwise operations to implement an automatic Sunglasses Filter. 
+Following are the high level steps:
+1. Detect the face using OpenCV DNN modules
+2. Extract the eye region.
+3. Warp the sunglasses onto the eye region.
+4. Use alpha matting to give transparency effect.
+Further comments in-line with code. 
+--------------------------------------------------------------------------------------------
+4. Blemish_Removal_app.ipynb
+This notebook implements a simple face-blemish removal application
+- load a face-image with blemishes
+- user clicks on the blemish and the blemish is gone!
+Blemish removal can be accomplished in two steps:
+- Find an image patch for replacing the blemish region. The best potential patches are in the neighborhood of the blemish region because lighting and texture in this region is likely to be consistent with the blemish region.
+- Blend the patch over the blemish region.
+These steps are implemented using an interactive application based on OpenCV's High-GUI framework, which enables the user to interactively click on the blemishes on the image and remove them and/or undo any changes instantly.
+This app cannot run on Jupyter notebook since it does not support High-GUI module, hence it will need to be run on a desktop system (This notebook is purely meant for documentation).
+--------------------------------------------------------------------------------------------
+5. Face_smoothing_app.ipynb
+This notebook implements a fully automated Face Smoothing application.
+Following are the steps:
+- Detect the face in the image using OpenCV's DNN face detection models- Caffe or TF. Even HAAR Cascades face detection model can be used.
+- Iterate over the detected faces and apply smoothing filter.
+--------------------------------------------------------------------------------------------
+6. Instagram_filters.ipynb
+This notebook implements 2 instagram-like filters using opencv.
+- Pencil Sketch Filter
+- Cartoon Filter using
